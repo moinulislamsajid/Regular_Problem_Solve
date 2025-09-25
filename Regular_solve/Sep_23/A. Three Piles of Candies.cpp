@@ -8,7 +8,7 @@ void solve()
     ll a,b,c;
     cin>>a>>b>>c;
 
-    cout<<(a+b+c)\2<<"\n";
+    cout<<(a+b+c)/2<<"\n";
 }
 
 int main()
