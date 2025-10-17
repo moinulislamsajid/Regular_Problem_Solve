@@ -18,7 +18,7 @@ void solve()
     int need = 0;
     if (diff > 0)
     {
-        // ceil((m - p) / 2.0)
+
         need = (diff + 1) / 2;
     }
     else
