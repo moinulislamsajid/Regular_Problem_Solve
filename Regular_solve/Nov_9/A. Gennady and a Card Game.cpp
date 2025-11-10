@@ -49,6 +49,7 @@ void solve()
     if(sameRank || sameSuite)
     {
         cout<<"YES\n";
+        return;
 
     }
 
