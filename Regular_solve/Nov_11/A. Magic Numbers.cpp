@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool solve(string& s)
+{
+
+
+    int i=0,n=s.size();
+
+    while(i<n)
+    {
+        if(i+3<=n && s.substr(i,3) == "144")
+        {
+            i+=3;
+        }
+        else if(i+2<=n && s.substr(i,2) == "14")
+        {
+            i+=2;
+        }
+        else if(s[i]=='1')
+        {
+            i+=1;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    return true;
+}
+
+int main()
+{
+
+    string s;
+    cin>>s;
+
+    if(solve(s))
+    {
+        cout<<"YES\n";
+    }
+    else
+    {
+        cout<<"NO\n";
+    }
+}
